@@ -1,0 +1,12 @@
+.container{
+    width: 500px;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff89;
+    /* width: 100%; */
+}
+.input-group{
+    padding-left: 3%;
+    padding-right: 3%;
+}

@@ -1,0 +1,38 @@
+<div class="container p-4 text-center">
+  <div class="card p-2 mt-5">
+    <form (submit)="onSubmit()">
+      <div class="input-group p-2">
+        <label class="input-group-text" for="nombre">Nombre:</label>
+        <input
+          type="text"
+          class="form-control"
+          name="nombre"
+          id="nombre"
+          [(ngModel)]="nombre"
+          required
+          (blur)="onBlur()"
+        />
+      </div>
+      <div class="input-group p-2">
+        <label class="input-group-text" for="email">Email:</label>
+        <input
+          type="text"
+          class="form-control"
+          name="email"
+          id="email"
+          [(ngModel)]="email"
+          required
+          (blur)="onBlur()"
+        />
+      </div>
+      <button
+        class="btn btn-success"
+        type="submit"
+        [disabled]="isSubmitDisabled"
+        (click)="confirmSubmit()"
+      >
+        Enviar
+      </button>
+    </form>
+  </div>
+</div>
